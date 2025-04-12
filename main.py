@@ -1,6 +1,10 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import warnings
+from sklearn.exceptions import InconsistentVersionWarning
+
+warnings.filterwarnings("ignore", category=InconsistentVersionWarning)
 
 with open('scaler.pkl', 'rb') as file:
     scaler = pickle.load(file)
