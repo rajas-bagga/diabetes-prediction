@@ -59,8 +59,8 @@ with st.form('input_form'):
         result_class = "Success" if prediction == 0 else "Error"
         
         if prediction == 0:
-            st.success("You don't have diabetes nigga")
+            st.success("Congrats! You don't have diabetes")
         else:
-            st.error("Nigga you have diabetes")
+            st.error("You have been diagnosed with diabetes")
 
     
