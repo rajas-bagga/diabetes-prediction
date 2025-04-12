@@ -9,9 +9,9 @@ with open('scaler.pkl', 'rb') as file:
 with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
 
-st.header("AI Diabetes Prediction")
+st.header("AI Diabetes Estimator")
 with st.form('input_form'):
-    st.subheader("Fill in the details NIGGA")
+    st.subheader("Fill in the details")
     
     col1, col2 = st.columns(2)
     
